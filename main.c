@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/ptrace.h>
 #include <sys/types.h>
-#include <sys/wait.h>
-#include <sys/user.h>
-#include <unistd.h>
-#include <dlfcn.h>
 #include <string.h>
 
 unsigned long long findLibrary(const char *library, pid_t pid) {
