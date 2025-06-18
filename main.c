@@ -32,5 +32,6 @@ unsigned long long addr = 0;
 
 int main(int argc, char * argv[]) {
     printf("Hello !!\n");
+	findLibrary("ssh", 2088);
     return 0;
 }
