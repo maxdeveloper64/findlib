@@ -12,7 +12,8 @@ unsigned long long addr = 0;
 	if (pid == -1) {
 		snprintf(mapFilename, sizeof(mapFilename), "/proc/self/maps");
 	} else {
-		snprintf(mapFilename, sizeof(mapFilename), "/proc/%d/maps", pid);
+		snprintf(mapFilename, 
+			sizeof(mapFilename), "/proc/%d/maps", pid);
 	}
 
 	fd = fopen(mapFilename, "r");
